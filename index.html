@@ -4,17 +4,16 @@
 	<meta content='width=device-width, initial-scale=1' name='viewport'/>
   <meta content="never" name="referrer">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">   
-    <title>Score808 Live: Jadwal Siaran Langsung Pertandingan Sepak Bola</title>
+    <title>Score808 idn: Jadwal Siaran Langsung Pertandingan Sepak Bola</title>
     <meta content='#212121' name='theme-color'/>
     <meta content='#212121' name='msapplication-navbutton-color'/>
     <link href='https://cdn.jsdelivr.net/gh/dudungelo/beritanasional@main/favicon.ico' rel='icon' type='image/x-icon'/>
     <meta content='Server Score808 menyajikan berita olahraga terhangat dan jadwal live streaming terpercaya setiap hari. Ikuti terus untuk tidak ketinggalan pertandingan besar malam ini!' name='description'/>
     <meta name="keywords" content="score808 live, JalaLive, tigoals, livescore, score808 live football, score808, score808live, tigoals"/>
-    <meta content='Free Server Live: Jadwal Siaran Langsung Pertandingan Sepak Bola' property='og:title'/>
+    <meta content='Free Score808 idn: Jadwal Siaran Langsung Pertandingan Sepak Bola' property='og:title'/>
     <link href='https://idn.score808.my.id/' rel='canonical'/>
     <meta content='https://idn.score808.my.id/' property='og:url'/>
     <meta content='Free Server menyajikan berita olahraga terhangat dan jadwal live streaming terpercaya setiap hari. Ikuti terus untuk tidak ketinggalan pertandingan besar malam ini!' name='og:description'/>
-    <link rel="preload" as="image" href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png' property='og:image'/>
     <meta content='score808' property='profile:username'/>
     <meta content='summary' name='twitter:card'/>
     <meta content='@tigoals' name='twitter:title'/>
@@ -25,7 +24,6 @@
   <link href='https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css' rel='stylesheet'/>
 <meta name="monetag" content="87d49bcf4fbcd43d2838b66e5c9743c9">
 	<meta name="yandex-verification" content="27295477e2922278" />
-	<script src="https://jsc.mgid.com/site/829703.js" async></script>
   <!-- Stylesheets -->
   <link rel="preconnect" href="https://www.youtube.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -1144,6 +1142,121 @@ border-radius:10px;
   }
 
 }
+/* =========================================================
+   MATCH SKELETON
+========================================================= */
+
+.match-skeleton-list{
+  display:grid;
+  gap:12px;
+  width:100%;
+}
+
+.match-skeleton{
+  position:relative;
+  overflow:hidden;
+  padding:16px;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:16px;
+  background:#fff;
+}
+
+.match-skeleton::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  transform:translateX(-100%);
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.75),
+    transparent
+  );
+  animation:matchSkeletonShimmer 1.2s infinite;
+}
+
+.skeleton-top{
+  width:42%;
+  height:12px;
+  border-radius:999px;
+  background:#e8edf3;
+}
+
+.skeleton-date{
+  width:55%;
+  height:10px;
+  margin-top:14px;
+  border-radius:999px;
+  background:#edf1f5;
+}
+
+.skeleton-teams{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  margin-top:20px;
+}
+
+.skeleton-team{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:9px;
+}
+
+.skeleton-logo{
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  background:#e8edf3;
+}
+
+.skeleton-name{
+  width:75%;
+  height:10px;
+  border-radius:999px;
+  background:#edf1f5;
+}
+
+.skeleton-vs{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:#edf1f5;
+}
+
+.skeleton-bottom{
+  width:35%;
+  height:9px;
+  margin-top:18px;
+  border-radius:999px;
+  background:#edf1f5;
+}
+
+@keyframes matchSkeletonShimmer{
+
+  100%{
+    transform:translateX(100%);
+  }
+
+}
+
+@media(max-width:600px){
+
+  .match-skeleton{
+    padding:14px;
+    border-radius:14px;
+  }
+
+  .skeleton-logo{
+    width:46px;
+    height:46px;
+  }
+
+}
+
 </style>
  
 	  <script type="application/ld+json">
@@ -1321,10 +1434,10 @@ border-radius:10px;
     <small>Join Channel</small>
   </span>
 </a>
-<div class="ads">
+<!--<div class="ads">
 <div data-type="_mgwidget" data-widget-id="1882211"></div>
 <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"]) })(window,"_mgq");</script>
-</div>
+</div>-->
 <div class='tabs-container'>
   <button class='tab-button active' onclick='setTab(this, &apos;semua&apos;)'>Jalalive </button>
     <button class='tab-button' onclick='setTab(this, &apos;news&apos;)'>Score808 <span class="badge-indicator"></span></button>
@@ -1402,252 +1515,776 @@ window.addEventListener("message", function(e) {
 </script>
   <!-- JS -->
 <script>
-let matchList = []
-fetch('https://idlive.falou.net/live/list')
-  .then((_0x2183fc) => _0x2183fc.json())
-  .then((_0x336b2f) => {
-    const _0x2ff6de = document.getElementById('live-matches')
-    if (_0x336b2f && _0x336b2f.data && _0x336b2f.data.list) {
-      matchList = _0x336b2f.data.list
-    } else {
-      matchList = []
-    }
-    if (matchList.length === 0) {
-      _0x2ff6de.innerHTML = '<p>Tidak ada pertandingan ditemukan.</p>'
-      return
-    }
-    _0x2ff6de.innerHTML = matchList
-      .map((_0x57be0f, _0xa93bd3) => {
-        const _0x59a902 = new Date(_0x57be0f.match_time * 1000),
-          _0x304963 = _0x59a902.toLocaleTimeString('id-ID', {
+/* =========================================================
+   MATCH DATA
+========================================================= */
+
+let matchList = [];
+
+const MATCH_API =
+  'https://idlive.falou.net/live/list';
+
+const MATCH_CACHE_KEY =
+  'score808_match_cache_v2';
+
+const MATCH_CACHE_TIME =
+  15000;
+
+
+/* =========================================================
+   ELEMENT
+========================================================= */
+
+const matchContainer =
+  document.getElementById('live-matches');
+
+
+/* =========================================================
+   SKELETON LOADING
+========================================================= */
+
+function showMatchSkeleton() {
+
+  if (!matchContainer) return;
+
+  matchContainer.innerHTML = `
+    <div class="match-skeleton-list">
+
+      ${Array.from({ length: 4 }).map(function () {
+        return `
+          <div class="match-skeleton">
+
+            <div class="skeleton-line skeleton-top"></div>
+
+            <div class="skeleton-date"></div>
+
+            <div class="skeleton-teams">
+
+              <div class="skeleton-team">
+                <div class="skeleton-logo"></div>
+                <div class="skeleton-name"></div>
+              </div>
+
+              <div class="skeleton-vs"></div>
+
+              <div class="skeleton-team">
+                <div class="skeleton-logo"></div>
+                <div class="skeleton-name"></div>
+              </div>
+
+            </div>
+
+            <div class="skeleton-bottom"></div>
+
+          </div>
+        `;
+      }).join('')}
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   ESCAPE HTML
+========================================================= */
+
+function escapeHtml(value) {
+
+  return String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+}
+
+
+/* =========================================================
+   RENDER MATCH
+========================================================= */
+
+function renderMatches(matches) {
+
+  if (!matchContainer) return;
+
+  if (!Array.isArray(matches) || matches.length === 0) {
+
+    matchContainer.innerHTML =
+      '<p>Tidak ada pertandingan ditemukan.</p>';
+
+    return;
+
+  }
+
+
+  matchContainer.innerHTML =
+    matches.map(function (match, index) {
+
+      const matchDate =
+        new Date(
+          Number(match.match_time) * 1000
+        );
+
+
+      const matchTime =
+        matchDate.toLocaleTimeString(
+          'id-ID',
+          {
             hour: '2-digit',
-            minute: '2-digit',
-          }),
-          _0x23967e = _0x59a902.toLocaleDateString('id-ID', {
+            minute: '2-digit'
+          }
+        );
+
+
+      const matchDay =
+        matchDate.toLocaleDateString(
+          'id-ID',
+          {
             weekday: 'long',
             day: 'numeric',
             month: 'long',
-            year: 'numeric',
+            year: 'numeric'
+          }
+        );
+
+
+      /* STATUS */
+
+      let statusClass = 'upcoming';
+      let statusText = 'Upcoming';
+
+
+      if (
+        match.type &&
+        String(match.type).includes('live')
+      ) {
+
+        statusClass = 'live';
+        statusText = 'LIVE';
+
+      } else if (
+        [8, 9].includes(
+          Number(match.status_id)
+        )
+      ) {
+
+        statusClass = 'finished';
+        statusText = 'Selesai';
+
+      }
+
+
+      /* STREAMERS */
+
+      const streamers =
+        Object.values(
+          match.streamers || {}
+        );
+
+
+      const streamerNames =
+        streamers
+          .map(function (streamer) {
+            return streamer && streamer.name
+              ? streamer.name
+              : '';
           })
-        let _0x50fff7 = 'upcoming',
-          _0x36b08d = 'Upcoming'
-        if (_0x57be0f.type?.includes('live')) {
-          _0x50fff7 = 'live'
-          _0x36b08d = 'LIVE'
-        } else {
-          ;[8, 9].includes(_0x57be0f.status_id) &&
-            ((_0x50fff7 = 'finished'), (_0x36b08d = 'Selesai'))
-        }
-        const _0x36dba0 =
-          Object.values(_0x57be0f.streamers || {})
-            .map((_0x1a1414) => _0x1a1414.name)
-            .join(' - ') || 'Tidak ada streamer'
-return (
-'\n<div class="livecard-match" ' +
-'data-match-id="' +
-(_0x57be0f.match_id || '') +
-'" ' +
-'onclick="handleMatchClick(' +
-_0xa93bd3 +
-')" ' +
-'style="cursor:pointer;">\n' +
-
-  '  <div class="livecard-header">\n' +
-
-  '    <div class="livecard-competition">' +
-  (_0x57be0f.competition_name || 'Football') +
-  '</div>\n' +
-
-  '    <span class="livecard-badge ' +
-  _0x50fff7 +
-  '">' +
-  _0x36b08d +
-  '</span>\n' +
-
-  '  </div>\n' +
+          .filter(Boolean)
+          .join(' - ');
 
 
-  '  <div class="livecard-date">\n' +
-
-  '    <span class="livecard-time">' +
-  _0x304963 +
-  '</span>\n' +
-
-  '    <span class="livecard-date-separator">•</span>\n' +
-
-  '    <span>' +
-  _0x23967e +
-  '</span>\n' +
-
-  '  </div>\n' +
+      const streamerText =
+        streamerNames ||
+        'Tidak ada streamer';
 
 
-  '  <div class="livecard-teams">\n' +
+      /* DATA */
 
-  '    <div class="livecard-team">\n' +
-
-  '      <img src="' +
-  _0x57be0f.home_logo +
-  '" alt="' +
-  _0x57be0f.home_name +
-  '" loading="lazy">\n' +
-
-  '      <div class="livecard-team-name">' +
-  _0x57be0f.home_name +
-  '</div>\n' +
-
-  '    </div>\n' +
+      const matchId =
+        escapeHtml(
+          match.match_id || ''
+        );
 
 
-  '    <div class="livecard-center">\n' +
-
-  '      <div class="livecard-vs">VS</div>\n' +
-
-  '    </div>\n' +
-
-
-  '    <div class="livecard-team">\n' +
-
-  '      <img src="' +
-  _0x57be0f.away_logo +
-  '" alt="' +
-  _0x57be0f.away_name +
-  '" loading="lazy">\n' +
-
-  '      <div class="livecard-team-name">' +
-  _0x57be0f.away_name +
-  '</div>\n' +
-
-  '    </div>\n' +
-
-  '  </div>\n' +
+      const competition =
+        escapeHtml(
+          match.competition_name ||
+          'Football'
+        );
 
 
-  '  <div class="livecard-bottom">\n' +
-
-  '    <div class="livecard-streamers">' +
-  (_0x36dba0 !== 'Tidak ada streamer'
-    ? '● ' + _0x36dba0
-    : 'Informasi pertandingan') +
-  '</div>\n' +
+      const homeName =
+        escapeHtml(
+          match.home_name ||
+          'Home'
+        );
 
 
-  '    <div class="livecard-actions">\n' +
+      const awayName =
+        escapeHtml(
+          match.away_name ||
+          'Away'
+        );
 
 
-  '      <button ' +
-  'type="button" ' +
-  'class="livecard-copy" ' +
-  'onclick="event.stopPropagation(); copyMatch(' +
-  _0xa93bd3 +
-  ')" ' +
-  'aria-label="Copy Match">' +
-
-  '        <svg viewBox="0 0 24 24" fill="none">' +
-
-  '          <rect ' +
-  'x="8" y="8" width="11" height="11" rx="2" ' +
-  'stroke="currentColor" stroke-width="2"/>' +
-
-  '          <path ' +
-  'd="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" ' +
-  'stroke="currentColor" stroke-width="2" ' +
-  'stroke-linecap="round"/>' +
-
-  '        </svg>' +
-
-  '        <span>Copy Match</span>' +
-
-  '      </button>\n' +
+      const homeLogo =
+        escapeHtml(
+          match.home_logo || ''
+        );
 
 
-  '      <button ' +
-  'type="button" ' +
-  'class="livecard-share" ' +
-  'onclick="event.stopPropagation(); shareMatch(' +
-  _0xa93bd3 +
-  ')" ' +
-  'aria-label="Share Match">' +
+      const awayLogo =
+        escapeHtml(
+          match.away_logo || ''
+        );
 
-  '        <svg viewBox="0 0 24 24" fill="none">' +
 
-  '          <circle cx="18" cy="5" r="2.5" ' +
-  'stroke="currentColor" stroke-width="2"/>' +
+      /*
+       * Logo pertama dimuat eager
+       * agar visual awal lebih cepat.
+       */
 
-  '          <circle cx="6" cy="12" r="2.5" ' +
-  'stroke="currentColor" stroke-width="2"/>' +
+      const imageLoading =
+        index < 4
+          ? 'eager'
+          : 'lazy';
 
-  '          <circle cx="18" cy="19" r="2.5" ' +
-  'stroke="currentColor" stroke-width="2"/>' +
 
-  '          <path ' +
-  'd="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4" ' +
-  'stroke="currentColor" stroke-width="2" ' +
-  'stroke-linecap="round"/>' +
+      return (
 
-  '        </svg>' +
+        '<div class="livecard-match" ' +
 
-  '      </button>\n' +
+        'data-match-id="' +
+        matchId +
+        '" ' +
 
-  '    </div>\n' +
+        'onclick="handleMatchClick(' +
+        index +
+        ')" ' +
 
-  '  </div>\n' +
+        'style="cursor:pointer;">' +
 
-  '</div>'
-)
-      })
-      .join('')
-      openMatchFromUrl()
-  })
-  .catch(() => {
-    document.getElementById('live-matches').innerHTML =
-      '<p>Gagal memuat data pertandingan.</p>'
-  })
-function makeStreamLink(_0x45dd6b, _0x36cf36) {
-  if (!_0x45dd6b) {
-    return null
-  }
-  const _0x427a17 = _0x45dd6b.replace('bf.jalaplay.net', 'bf.jabflive.com'),
-    _0x42ceb2 =
-      'https://jlbfpc.jlbfyh.com/index.php?url=' +
-      encodeURIComponent(_0x427a17) +
-      '&cover=' +
-      encodeURIComponent(
-        _0x36cf36 ||
-          'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXZtZi0_3WuPLAJYIccfp6zTb3AIAwzSy0kcpeoGg62Z-C3m63KoRlnxsgBEvJoNf2ngUG1jWonFXQ9ui3ED9VMtSj_Utkw5hl2pJhjrmEUD8527M1BIrFrYZ2uMtsZNYe22CXvE4sy9By3pyJ-Z5V7ib2GqRniwvm2XbN1fypkORUaRNhXMPGqRYoF2w/s1600/wwwscore808myid.png'
-      ) +
-      '&version=1&muted_btn=1&livetype=1&lang=id&web_fullscreen_tips=2&replay_download_tips=10&muted=1'
-  return 'https://play.beritanasional.eu.org/watch?url+' + btoa(_0x42ceb2)
+
+        /* HEADER */
+
+        '  <div class="livecard-header">' +
+
+        '    <div class="livecard-competition">' +
+        competition +
+        '</div>' +
+
+        '    <span class="livecard-badge ' +
+        statusClass +
+        '">' +
+        statusText +
+        '</span>' +
+
+        '  </div>' +
+
+
+        /* DATE */
+
+        '  <div class="livecard-date">' +
+
+        '    <span class="livecard-time">' +
+        matchTime +
+        '</span>' +
+
+        '    <span class="livecard-date-separator">•</span>' +
+
+        '    <span>' +
+        matchDay +
+        '</span>' +
+
+        '  </div>' +
+
+
+        /* TEAMS */
+
+        '  <div class="livecard-teams">' +
+
+
+        '    <div class="livecard-team">' +
+
+        '      <img ' +
+        'src="' + homeLogo + '" ' +
+        'alt="' + homeName + '" ' +
+        'width="64" ' +
+        'height="64" ' +
+        'decoding="async" ' +
+        'loading="' + imageLoading + '">' +
+
+        '      <div class="livecard-team-name">' +
+        homeName +
+        '</div>' +
+
+        '    </div>' +
+
+
+        '    <div class="livecard-center">' +
+
+        '      <div class="livecard-vs">VS</div>' +
+
+        '    </div>' +
+
+
+        '    <div class="livecard-team">' +
+
+        '      <img ' +
+        'src="' + awayLogo + '" ' +
+        'alt="' + awayName + '" ' +
+        'width="64" ' +
+        'height="64" ' +
+        'decoding="async" ' +
+        'loading="' + imageLoading + '">' +
+
+        '      <div class="livecard-team-name">' +
+        awayName +
+        '</div>' +
+
+        '    </div>' +
+
+
+        '  </div>' +
+
+
+        /* BOTTOM */
+
+        '  <div class="livecard-bottom">' +
+
+
+        '    <div class="livecard-streamers">' +
+
+        (
+          streamerNames
+            ? '● ' + escapeHtml(streamerText)
+            : 'Informasi pertandingan'
+        ) +
+
+        '</div>' +
+
+
+        /* ACTIONS */
+
+        '    <div class="livecard-actions">' +
+
+
+        /* COPY */
+
+        '      <button ' +
+        'type="button" ' +
+        'class="livecard-copy" ' +
+        'onclick="event.stopPropagation(); copyMatch(' +
+        index +
+        ')" ' +
+        'aria-label="Copy Match">' +
+
+        '        <svg viewBox="0 0 24 24" fill="none">' +
+
+        '          <rect ' +
+        'x="8" y="8" width="11" height="11" rx="2" ' +
+        'stroke="currentColor" stroke-width="2"/>' +
+
+        '          <path ' +
+        'd="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" ' +
+        'stroke="currentColor" stroke-width="2" ' +
+        'stroke-linecap="round"/>' +
+
+        '        </svg>' +
+
+        '        <span>Copy Match</span>' +
+
+        '      </button>' +
+
+
+        /* SHARE */
+
+        '      <button ' +
+        'type="button" ' +
+        'class="livecard-share" ' +
+        'onclick="event.stopPropagation(); shareMatch(' +
+        index +
+        ')" ' +
+        'aria-label="Share Match">' +
+
+        '        <svg viewBox="0 0 24 24" fill="none">' +
+
+        '          <circle cx="18" cy="5" r="2.5" ' +
+        'stroke="currentColor" stroke-width="2"/>' +
+
+        '          <circle cx="6" cy="12" r="2.5" ' +
+        'stroke="currentColor" stroke-width="2"/>' +
+
+        '          <circle cx="18" cy="19" r="2.5" ' +
+        'stroke="currentColor" stroke-width="2"/>' +
+
+        '          <path ' +
+        'd="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4" ' +
+        'stroke="currentColor" stroke-width="2" ' +
+        'stroke-linecap="round"/>' +
+
+        '        </svg>' +
+
+        '      </button>' +
+
+
+        '    </div>' +
+
+        '  </div>' +
+
+        '</div>'
+
+      );
+
+    }).join('');
+
+
+  /*
+   * Setelah card tampil,
+   * buka match dari URL jika ada.
+   */
+
+  openMatchFromUrl();
+
 }
-function setIframe(_0x12b19f) {
+
+
+/* =========================================================
+   CACHE
+========================================================= */
+
+function getCachedMatches() {
+
+  try {
+
+    const cached =
+      sessionStorage.getItem(
+        MATCH_CACHE_KEY
+      );
+
+    if (!cached) {
+      return null;
+    }
+
+
+    const parsed =
+      JSON.parse(cached);
+
+
+    if (
+      !parsed ||
+      !parsed.time ||
+      !Array.isArray(parsed.data)
+    ) {
+      return null;
+    }
+
+
+    /*
+     * Cache hanya digunakan
+     * maksimal 15 detik.
+     */
+
+    if (
+      Date.now() - parsed.time >
+      MATCH_CACHE_TIME
+    ) {
+
+      sessionStorage.removeItem(
+        MATCH_CACHE_KEY
+      );
+
+      return null;
+
+    }
+
+
+    return parsed.data;
+
+  } catch (error) {
+
+    return null;
+
+  }
+
+}
+
+
+/* =========================================================
+   SAVE CACHE
+========================================================= */
+
+function saveMatchesCache(matches) {
+
+  try {
+
+    sessionStorage.setItem(
+      MATCH_CACHE_KEY,
+      JSON.stringify({
+        time: Date.now(),
+        data: matches
+      })
+    );
+
+  } catch (error) {
+
+    /* Ignore storage error */
+
+  }
+
+}
+
+
+/* =========================================================
+   LOAD API
+========================================================= */
+
+async function loadMatches() {
+
+  if (!matchContainer) return;
+
+
+  /*
+   * Skeleton langsung tampil.
+   */
+
+  showMatchSkeleton();
+
+
+  /*
+   * Gunakan cache terlebih dahulu
+   * agar halaman tidak terlihat kosong.
+   */
+
+  const cached =
+    getCachedMatches();
+
+
+  if (cached) {
+
+    matchList = cached;
+
+    renderMatches(matchList);
+
+  }
+
+
+  /*
+   * Timeout API
+   */
+
+  const controller =
+    new AbortController();
+
+
+  const timeout =
+    setTimeout(function () {
+
+      controller.abort();
+
+    }, 10000);
+
+
+  try {
+
+    const response =
+      await fetch(
+        MATCH_API,
+        {
+          method: 'GET',
+          cache: 'no-store',
+          signal: controller.signal
+        }
+      );
+
+
+    clearTimeout(timeout);
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        'HTTP ' +
+        response.status
+      );
+
+    }
+
+
+    const data =
+      await response.json();
+
+
+    if (
+      !data ||
+      !data.data ||
+      !Array.isArray(data.data.list)
+    ) {
+
+      throw new Error(
+        'Format API tidak valid'
+      );
+
+    }
+
+
+    matchList =
+      data.data.list;
+
+
+    /*
+     * Simpan cache
+     */
+
+    saveMatchesCache(
+      matchList
+    );
+
+
+    /*
+     * Render satu kali
+     */
+
+    renderMatches(
+      matchList
+    );
+
+
+  } catch (error) {
+
+    clearTimeout(timeout);
+
+
+    /*
+     * Jika cache sudah tampil,
+     * jangan mengganti card dengan error.
+     */
+
+    if (
+      !matchList ||
+      matchList.length === 0
+    ) {
+
+      matchContainer.innerHTML =
+        '<p>Gagal memuat data pertandingan.</p>';
+
+    }
+
+
+    console.error(
+      'Gagal memuat pertandingan:',
+      error
+    );
+
+  }
+
+}
+
+
+/* =========================================================
+   START
+========================================================= */
+
+loadMatches();
+
+
+/* =========================================================
+   STREAM LINK
+========================================================= */
+
+function makeStreamLink(
+  streamUrl,
+  cover
+) {
+
+  if (!streamUrl) {
+    return null;
+  }
+
+
+  const convertedUrl =
+    streamUrl.replace(
+      'bf.jalaplay.net',
+      'bf.jabflive.com'
+    );
+
+
+  const playerUrl =
+    'https://jlbfpc.jlbfyh.com/index.php?url=' +
+    encodeURIComponent(
+      convertedUrl
+    ) +
+
+    '&cover=' +
+
+    encodeURIComponent(
+      cover ||
+      'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXZtZi0_3WuPLAJYIccfp6zTb3AIAwzSy0kcpeoGg62Z-C3m63KoRlnxsgBEvJoNf2ngUG1jWonFXQ9ui3ED9VMtSj_Utkw5hl2pJhjrmEUD8527M1BIrFrYZ2uMtsZNYe22CXvE4sy9By3pyJ-Z5V7ib2GqRniwvm2XbN1fypkORUaRNhXMPGqRYoF2w/s1600/wwwscore808myid.png'
+    ) +
+
+    '&version=1' +
+    '&muted_btn=1' +
+    '&livetype=1' +
+    '&lang=id' +
+    '&web_fullscreen_tips=2' +
+    '&replay_download_tips=10' +
+    '&muted=1';
+
+
+  return (
+    'https://play.beritanasional.eu.org/watch?url+' +
+    btoa(
+      unescape(
+        encodeURIComponent(
+          playerUrl
+        )
+      )
+    )
+  );
+
+}
+
+
+/* =========================================================
+   IFRAME
+========================================================= */
+
+function setIframe(
+  iframeUrl
+) {
 
   const player =
-    document.getElementById('stream-player');
+    document.getElementById(
+      'stream-player'
+    );
+
 
   const container =
-    document.querySelector('.iframe-container');
+    document.querySelector(
+      '.iframe-container'
+    );
 
-  if (!player || !container) {
+
+  if (
+    !player ||
+    !container
+  ) {
     return;
   }
 
 
-  /*
-   * Set iframe
-   */
-  player.src = _0x12b19f;
+  player.src =
+    iframeUrl;
 
 
-  /*
-   * Tandai player aktif
-   */
-  container.classList.add('match-player-active');
+  container.classList.add(
+    'match-player-active'
+  );
 
 
-  /*
-   * Scroll ke player
-   */
-  setTimeout(() => {
+  setTimeout(function () {
 
     container.scrollIntoView({
       behavior: 'smooth',
@@ -1657,41 +2294,62 @@ function setIframe(_0x12b19f) {
   }, 100);
 
 }
-function handleMatchClick(index) {
 
-  const match = matchList[index];
+
+/* =========================================================
+   MATCH CLICK
+========================================================= */
+
+function handleMatchClick(
+  index
+) {
+
+  const match =
+    matchList[index];
+
 
   if (!match) {
-    alert('Pertandingan tidak tersedia.');
+
+    alert(
+      'Pertandingan tidak tersedia.'
+    );
+
     return;
+
   }
 
-  /*
-   * =====================================================
-   * UPDATE URL HALAMAN
-   * =====================================================
-   */
+
+  /* =====================================================
+     UPDATE URL
+  ===================================================== */
 
   if (match.match_id) {
 
-    const matchId = String(match.match_id);
+    const matchId =
+      String(
+        match.match_id
+      );
+
 
     const currentMatch =
       new URLSearchParams(
         window.location.search
       ).get('match');
 
-    /*
-     * Jangan membuat history baru jika
-     * URL sudah menunjuk ke match yang sama
-     */
-    if (String(currentMatch) !== matchId) {
+
+    if (
+      String(currentMatch) !==
+      matchId
+    ) {
 
       const pageUrl =
         window.location.origin +
         window.location.pathname +
         '?match=' +
-        encodeURIComponent(matchId);
+        encodeURIComponent(
+          matchId
+        );
+
 
       window.history.pushState(
         {
@@ -1706,26 +2364,23 @@ function handleMatchClick(index) {
   }
 
 
-  /*
-   * =====================================================
-   * STREAMER DATA
-   * =====================================================
-   */
+  /* =====================================================
+     STREAMER
+  ===================================================== */
 
   const streamers =
     Object.values(
       match.streamers || {}
     );
 
+
   const cover =
     match.cover;
 
 
-  /*
-   * =====================================================
-   * MATCH INFORMATION IFRAME
-   * =====================================================
-   */
+  /* =====================================================
+     MATCH INFO IFRAME
+  ===================================================== */
 
   if (match.match_id) {
 
@@ -1734,7 +2389,9 @@ function handleMatchClick(index) {
       '?profile=g9rzlugz3uxie81' +
       '&trend=0' +
       '&id=' +
-      encodeURIComponent(match.match_id) +
+      encodeURIComponent(
+        match.match_id
+      ) +
       '&timezone=%207%3A00';
 
 
@@ -1753,9 +2410,6 @@ function handleMatchClick(index) {
       encodedMatch;
 
 
-    /*
-     * Load iframe
-     */
     setIframe(
       iframeUrl
     );
@@ -1769,169 +2423,221 @@ function handleMatchClick(index) {
   }
 
 
-  /*
-   * =====================================================
-   * TV BUTTONS
-   * TETAP EXTERNAL
-   * =====================================================
-   */
+  /* =====================================================
+     TV EXTERNAL
+  ===================================================== */
 
   const buttons =
     streamers
-      .map(
-        (streamer, tvIndex) => {
+      .map(function (
+        streamer,
+        tvIndex
+      ) {
 
-          const streamUrl =
-            streamer.stream?.hd ||
-            streamer.stream?.szy;
-
-
-          if (!streamUrl) {
-            return '';
-          }
-
-
-          const externalUrl =
-            makeStreamLink(
-              streamUrl,
-              cover
-            );
+        const streamUrl =
+          streamer &&
+          streamer.stream
+            ? (
+                streamer.stream.hd ||
+                streamer.stream.szy
+              )
+            : null;
 
 
-          if (!externalUrl) {
-            return '';
-          }
+        if (!streamUrl) {
+          return '';
+        }
 
 
-          return `
-            <a
-              href="https://play.beritanasional.eu.org/v1?url=${encodeURIComponent(externalUrl)}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="tv-external-btn"
-              onclick="event.stopPropagation()"
+        const externalUrl =
+          makeStreamLink(
+            streamUrl,
+            cover
+          );
+
+
+        if (!externalUrl) {
+          return '';
+        }
+
+
+        return `
+
+          <a
+            href="https://play.beritanasional.eu.org/v1?url=${encodeURIComponent(externalUrl)}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="tv-external-btn"
+            onclick="event.stopPropagation()"
+          >
+
+            <svg
+              class="tv-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
             >
 
-              <svg
-                class="tv-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
+              <rect
+                x="3"
+                y="6"
+                width="18"
+                height="13"
+                rx="2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
 
-                <rect
-                  x="3"
-                  y="6"
-                  width="18"
-                  height="13"
-                  rx="2"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                />
+              <path
+                d="M8 3l4 3 4-3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
 
-                <path
-                  d="M8 3l4 3 4-3"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <path
+                d="M10 10.5l5 2.5-5 2.5z"
+                fill="currentColor"
+              />
 
-                <path
-                  d="M10 10.5l5 2.5-5 2.5z"
-                  fill="currentColor"
-                />
+            </svg>
 
-              </svg>
+            <span>TV ${tvIndex + 1}</span>
 
-              <span>TV ${tvIndex + 1}</span>
+            <svg
+              class="external-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
 
-              <svg
-                class="external-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
+              <path
+                d="M14 4h6v6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
 
-                <path
-                  d="M14 4h6v6"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <path
+                d="M20 4l-9 9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
 
-                <path
-                  d="M20 4l-9 9"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
+              <path
+                d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
 
-                <path
-                  d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+            </svg>
 
-              </svg>
+          </a>
 
-            </a>
-          `;
+        `;
 
-        }
-      )
+      })
       .join('');
 
 
-  /*
-   * =====================================================
-   * RENDER TV BUTTONS
-   * =====================================================
-   */
+  /* =====================================================
+     SHARE BUTTON
+  ===================================================== */
 
-const shareButton = `
-  <button
-    type="button"
-    class="match-share-btn"
-    onclick="event.stopPropagation(); shareMatch(${index})"
-    aria-label="Share Match"
-  >
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <circle cx="18" cy="5" r="2.5"
-        stroke="currentColor"
-        stroke-width="2"/>
-      <circle cx="6" cy="12" r="2.5"
-        stroke="currentColor"
-        stroke-width="2"/>
-      <circle cx="18" cy="19" r="2.5"
-        stroke="currentColor"
-        stroke-width="2"/>
-      <path d="M8.2 10.8l7.6-4.4"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"/>
-      <path d="M8.2 13.2l7.6 4.4"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"/>
-    </svg>
-    <span>Share</span>
-  </button>
-`;
+  const shareButton = `
 
-const playerButtons = document.getElementById('player-buttons');
+    <button
+      type="button"
+      class="match-share-btn"
+      onclick="event.stopPropagation(); shareMatch(${index})"
+      aria-label="Share Match"
+    >
 
-if (playerButtons) {
-  playerButtons.innerHTML = buttons + shareButton;
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+      >
+
+        <circle
+          cx="18"
+          cy="5"
+          r="2.5"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="6"
+          cy="12"
+          r="2.5"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+
+        <circle
+          cx="18"
+          cy="19"
+          r="2.5"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+
+        <path
+          d="M8.2 10.8l7.6-4.4"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+
+        <path
+          d="M8.2 13.2l7.6 4.4"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+
+      </svg>
+
+      <span>Share</span>
+
+    </button>
+
+  `;
+
+
+  /* =====================================================
+     RENDER PLAYER BUTTONS
+  ===================================================== */
+
+  const playerButtons =
+    document.getElementById(
+      'player-buttons'
+    );
+
+
+  if (playerButtons) {
+
+    playerButtons.innerHTML =
+      buttons +
+      shareButton;
+
+  }
+
 }
 
-}
+
+/* =========================================================
+   OPEN MATCH FROM URL
+========================================================= */
 
 function openMatchFromUrl() {
 
@@ -1940,22 +2646,28 @@ function openMatchFromUrl() {
       window.location.search
     );
 
+
   const matchId =
     params.get('match');
+
 
   if (!matchId) {
     return;
   }
 
 
-  /*
-   * Cari match berdasarkan ID
-   */
   const index =
     matchList.findIndex(
-      match =>
-        String(match.match_id) ===
-        String(matchId)
+      function (match) {
+
+        return (
+          String(
+            match.match_id
+          ) ===
+          String(matchId)
+        );
+
+      }
     );
 
 
@@ -1971,24 +2683,37 @@ function openMatchFromUrl() {
   }
 
 
-  /*
-   * Tunggu DOM card selesai
-   */
-  setTimeout(() => {
+  setTimeout(function () {
 
-    const card =
-      document.querySelector(
-        '.livecard-match[data-match-id="' +
-        CSS.escape(
-          String(matchId)
-        ) +
-        '"]'
+    const cards =
+      document.querySelectorAll(
+        '.livecard-match'
       );
 
 
-    /*
-     * Scroll ke card
-     */
+    let card = null;
+
+
+    cards.forEach(
+      function (item) {
+
+        if (
+          String(
+            item.getAttribute(
+              'data-match-id'
+            )
+          ) ===
+          String(matchId)
+        ) {
+
+          card = item;
+
+        }
+
+      }
+    );
+
+
     if (card) {
 
       card.scrollIntoView({
@@ -1999,15 +2724,6 @@ function openMatchFromUrl() {
     }
 
 
-    /*
-     * Jalankan handler yang sama
-     * seperti ketika card diklik manual
-     *
-     * Ini otomatis:
-     * - membuat iframe
-     * - membuat tombol TV
-     * - mempertahankan match aktif
-     */
     handleMatchClick(
       index
     );
@@ -2017,19 +2733,35 @@ function openMatchFromUrl() {
 
 }
 
-async function shareMatch(index) {
 
-  const match = matchList[index];
+/* =========================================================
+   SHARE MATCH
+========================================================= */
 
-  if (!match || !match.match_id) {
+async function shareMatch(
+  index
+) {
+
+  const match =
+    matchList[index];
+
+
+  if (
+    !match ||
+    !match.match_id
+  ) {
     return;
   }
 
-  const url = new URL(
-    window.location.href
-  );
+
+  const url =
+    new URL(
+      window.location.href
+    );
+
 
   url.search = '';
+
 
   url.searchParams.set(
     'match',
@@ -2038,28 +2770,55 @@ async function shareMatch(index) {
 
 
   const title =
-    `${match.home_name || 'Home'} vs ${match.away_name || 'Away'}`;
+    (
+      match.home_name ||
+      'Home'
+    ) +
+    ' vs ' +
+    (
+      match.away_name ||
+      'Away'
+    );
+
 
   const text =
-    `${title} • ${match.competition_name || 'Pertandingan'}`;
+    title +
+    ' • ' +
+    (
+      match.competition_name ||
+      'Pertandingan'
+    );
 
 
-  if (navigator.share) {
+  if (
+    navigator.share
+  ) {
 
     try {
 
       await navigator.share({
+
         title: title,
+
         text: text,
+
         url: url.toString()
+
       });
+
 
       return;
 
     } catch (error) {
 
-      if (error.name === 'AbortError') {
+      if (
+        error &&
+        error.name ===
+        'AbortError'
+      ) {
+
         return;
+
       }
 
     }
@@ -2073,9 +2832,17 @@ async function shareMatch(index) {
       url.toString()
     );
 
-    showShareToast(
-      'Link pertandingan berhasil disalin'
-    );
+
+    if (
+      typeof showShareToast ===
+      'function'
+    ) {
+
+      showShareToast(
+        'Link pertandingan berhasil disalin'
+      );
+
+    }
 
   } catch (error) {
 
@@ -2088,6 +2855,7 @@ async function shareMatch(index) {
 
 }
 </script>
+
 <script>
 async function copyMatch(index) {
 
